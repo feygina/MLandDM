@@ -1,0 +1,22 @@
+Choose at least 1 from the following:
+
+- train a CNN using greedy layer-wise pretraining via Variational Convolutional AutoEncoders followed by fune-tuning (0.5);
+- train a fully connected NN using greedy layer-wise pretraining via RBM with Bernulli hidden units, sample X from full network (previous lecture) (1.0).
+
+
+Optional exercises:
+- train a fully connected NN with dropout and drop-connect (not simultaneously), compare results (0.25);
+- train a CNN with Gaussian noise in input, dropout and both, compare results (0.25);
+- implement multi-start optimization procedure and train a fully connected NN with it (0.25);
+- implement a dense layer with factorized weight matrix, find and introduce sparseness constraints
+  (first google result I found: http://www.jmlr.org/papers/volume5/hoyer04a/hoyer04a.pdf),
+  train a dense network with first two layers being factorized (0.5);
+- introduce sparseness constraints for CNN's filters and train such network (0.5);
+- implement and train Deeply Supervised CNN (0.5);
+- train a Network-in-network NN (0.5); 
+- train GAN (tip: use reweighting code from one of previous lectures) (0.5);
+
+Homework should be presented as Jupyter notebook (or several notebooks).
+I recommend theano + lasagne.
+
+All CNN and Dense NN should have at least 4 layers of weights (e.g. 4 conv layers, 4 dense layers etc).
